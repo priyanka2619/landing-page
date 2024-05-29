@@ -1,0 +1,32 @@
+/* subscription-form.component.scss */
+.subscription-form {
+    background-color: #FFF2F3;
+
+    .section-title {
+        font-size: 2rem;
+        color: #32312c;
+    }
+
+    .section-subtitle {
+        color: #32312c;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .input-group {
+        .form-control {
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+
+        .btn-success {
+            border-top-right-radius: 0.25rem;
+            border-bottom-right-radius: 0.25rem;
+        }
+    }
+}
+
+.font-20 {
+    font-size: 20px;
+    font-weight: 600;
+}

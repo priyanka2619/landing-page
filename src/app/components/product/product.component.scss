@@ -1,0 +1,106 @@
+/* approbable-packages.component.scss */
+.approbable-packages {
+    background-color: #f9f9f9;
+
+    .section-title {
+        font-size: 2rem;
+        color: #32312c;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3rem;
+            height: 0.25rem;
+            background-color: #da0037;
+        }
+    }
+
+    .section-subtitle {
+        color: #32312c;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-link {
+        color: #96BA7B;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #769f57; // Optional: Change text color on hover
+        }
+
+        i {
+            margin-left: 0.5rem;
+            transition: transform 0.3s;
+        }
+
+        &:hover i {
+            transform: translateX(5px);
+        }
+    }
+
+    .icon-container {
+        width: 65px;
+        height: 65px;
+        background-color: #96BB7C; // Green background color
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-style,
+    .icon-img {
+        font-size: 32px;
+        color: white; // White color for icons
+    }
+
+    p-card {
+
+
+        .p-card-title,
+        .p-card-subtitle {
+            text-align: center;
+        }
+
+        .p-card-header {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center;
+            margin: 2rem;
+            background-color: #f9f9f9;
+
+        }
+
+        .red-line {
+            width: 40px;
+            height: 4px;
+            background-color: #da0037;
+            margin-top: 1rem;
+        }
+    }
+}
+
+
+::ng-deep {
+
+    .p-card,
+    .p-component {
+        padding: 25px;
+    }
+
+    .custom-card {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+    }
+
+}

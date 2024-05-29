@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+
+/* styles.scss */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #ffcbf1;
+    color: #32312c;
+    padding: 60px 0;
+}
+
+.hero .display-4 {
+    font-weight: bold;
+}
+
+.hero .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.hero .btn-outline-secondary {
+    border-color: #28a745;
+    color: #28a745;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero img {
+        margin-top: 20px;
+    }
+}
+
+.btn-success {
+    background-color: #96BA7B !important;
+    border: 1px solid #96BA7B !important;
+    color: #FFF2F3 !important;
+}
+
+.text-green {
+    color: #96BA7B !important;
+}
+
+.btn-outline-secondary {
+    border-color: #96BA7B !important;
+    color: #96BA7B !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #96BA7B !important;
+    color: #FFF2F3 !important;
+}
+
+.text-grey {
+    color: #737373;
+}
+
+.align-left {
+    text-align: left !important;
+}
