@@ -1,0 +1,27 @@
+<!-- subscription-form.component.html -->
+<section class="subscription-form py-5" id="contact">
+    <div class="container py-5 my-5">
+        <div class="text-center mb-4">
+            <p class="text-green pt-5 font-20">Newsletter</p>
+            <h2 class="section-title">Watch our Courses</h2>
+            <p class="section-subtitle">Problems trying to resolve the conflict between the two major realms of
+                Classical physics: Newtonian mechanics.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form [formGroup]="subscriptionForm" (ngSubmit)="onSubmit()">
+                    <div class="input-group">
+                        <input type="email" formControlName="email" class="form-control" placeholder="Your Email">
+                        <button type="submit" class="btn btn-success">Subscribe</button>
+                    </div>
+                    <div *ngIf="submitted && subscriptionForm.get('email')?.errors" class="text-danger mt-2">
+                        <small *ngIf="subscriptionForm.get('email')?.errors?.['required']">Email is required.</small>
+                        <small *ngIf="subscriptionForm.get('email')?.errors?.['email']">Invalid email format.</small>
+                        <small *ngIf="subscriptionForm.get('email')?.errors?.['pattern']">Invalid email format.</small>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <app-footer></app-footer> -->

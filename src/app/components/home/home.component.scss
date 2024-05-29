@@ -1,0 +1,88 @@
+/* hero.component.scss */
+.hero {
+    background-color: #FFF2F3;
+    padding: 3rem 0;
+    position: relative;
+
+    .text-green {
+        color: #8cc63f;
+    }
+
+    .text-grey {
+        color: #757575;
+    }
+
+    .hero-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 50%;
+        /* Adjust as needed for larger screens */
+    }
+
+    @media (max-width: 768px) {
+        .hero-img {
+            position: relative;
+            bottom: auto;
+            right: auto;
+            max-width: 100%;
+            margin-top: 1rem;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .text-md-left {
+            text-align: left !important;
+        }
+
+        .text-md-right {
+            text-align: right !important;
+        }
+
+        .font-20 {
+            font-size: 18px;
+        }
+
+        .display-4 {
+            font-size: 2rem;
+        }
+
+        .btn-lg {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .font-20 {
+            font-size: 16px;
+        }
+
+        .display-4 {
+            font-size: 1.5rem;
+        }
+
+        .btn-lg {
+            font-size: 0.875rem;
+            padding: 0.5rem 1rem;
+        }
+    }
+}
+
+.font-20 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text-green {
+    color: #96BA7B !important;
+}
+
+::ng-deep {
+    .img-fluid {
+        height: auto;
+        max-height: 100%;
+    }
+}

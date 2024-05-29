@@ -1,0 +1,28 @@
+<!-- team-carousel.component.html -->
+<section class="team-carousel py-5" id="price">
+    <div class="container">
+        <div class="text-left mb-4">
+            <p class="text-green pt-5 font-20">Teams</p>
+            <h2 class="section-title">Get Quality Education</h2>
+            <p class="section-subtitle">Problems trying to resolve the conflict between <br />the two major realms of
+                Classical physics: Newtonian mechanics.</p>
+        </div>
+        <p-carousel [value]="members" [numVisible]="4" [numScroll]="1" [responsiveOptions]="responsiveOptions"
+            [circular]="true" [autoplayInterval]="3000">
+            <ng-template pTemplate="item" let-member>
+                <div class="card text-center m-3 team-card">
+                    <img [src]="member.image" class="card-img-top" alt="{{member.name}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{member.name}}</h5>
+                        <p class="card-text">{{member.profession}}</p>
+                        <div class="social-icons">
+                            <a [href]="member.social.facebook" target="_blank"><i class="pi pi-facebook"></i></a>
+                            <a [href]="member.social.twitter" target="_blank"><i class="pi pi-twitter"></i></a>
+                            <a [href]="member.social.instagram" target="_blank"><i class="pi pi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</section>
