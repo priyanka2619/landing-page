@@ -19,7 +19,7 @@ Before you begin, ensure you have met the following requirements:
   npm install -g @angular/cli
 
 ## Clone the Repository
-git clone https://github.com/priyanka2619/landing-page.git
-cd landing-page/visa2fly-frontend
-npm install
-ng serve
+- git clone https://github.com/priyanka2619/landing-page.git
+- cd landing-page/visa2fly-frontend
+- npm install
+- ng serve
