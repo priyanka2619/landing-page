@@ -23,3 +23,6 @@ Before you begin, ensure you have met the following requirements:
 - cd landing-page/visa2fly-frontend
 - npm install
 - ng serve
+
+## Deploy
+- Click here to see the live demo: https://landing-page-azure-gamma.vercel.app/
